@@ -3,6 +3,9 @@ var app = express();
 
 var PORT = 3000;
 
+app.get("/", (req, res)=>{
+  res.send("Welcome to ECOM Backend Endpoints : 1. /welcome , 2. /greet , 3. /check-password , 4. /subscription-status ")
+})
 // Q1
 function getWelcomeMessage() {
   return "Welcome to our service!";
